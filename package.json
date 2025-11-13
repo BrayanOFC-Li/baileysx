@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "@brayanofc-li/baileysx",
   "version": "6.7.18",
@@ -5,6 +6,12 @@
   "keywords": [
     "whatsapp",
     "automation"
+=======
+{ "name": "@brayanofc-li/baileysx", "version": 
+  "6.7.18", "description": "version personal 
+  BrayanOFC-Li", "keywords": [
+    "whatsapp", "automation"
+>>>>>>> ab90396c7e (BrayanOFC-Li)
   ],
   "homepage": "https://github.com/BrayanOFC-Li/baileysx/",
   "repository": {
@@ -101,4 +108,4 @@
   "engines": {
     "node": ">=20.0.0"
   }
-}
+
