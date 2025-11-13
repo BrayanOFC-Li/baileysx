@@ -8,7 +8,7 @@
 
 </div>
 
-<div align='center'>Baileys is a WebSockets-based TypeScript library for interacting with the WhatsApp Web API.</div>
+<div align='center'>baileysx is a WebSockets-based TypeScript library for interacting with the WhatsApp Web API.</div>
 
 # Important Note
 This is a temporally README, the new guide is at development and will be fully released when it's finished.
@@ -22,7 +22,7 @@ If you'd like to financially support this project, you can do so by supporting t
 This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp or any of its subsidiaries or its affiliates.
 The official WhatsApp website can be found at whatsapp.com. "WhatsApp" as well as related names, marks, emblems and images are registered trademarks of their respective owners.
 
-The maintainers of Baileys do not in any way condone the use of this application in practices that violate the Terms of Service of WhatsApp. The maintainers of this application call upon the personal responsibility of its users to use this application in a fair way, as it is intended to be used.
+The maintainers of baileysx do not in any way condone the use of this application in practices that violate the Terms of Service of WhatsApp. The maintainers of this application call upon the personal responsibility of its users to use this application in a fair way, as it is intended to be used.
 Use at your own discretion. Do not spam people with this. We discourage any stalkerware, bulk or automated messaging usage.
 
 ##
@@ -42,7 +42,7 @@ This is the only official repository and is maintained by the community.
 Do check out & run [example.ts](Example/example.ts) to see an example usage of the library.
 The script covers most common use cases.
 To run the example script, download or clone the repo and then type the following in a terminal:
-1. ``` cd path/to/Baileys ```
+1. ``` cd path/to/baileysx ```
 2. ``` yarn ```
 3. ``` yarn example ```
 
@@ -50,17 +50,17 @@ To run the example script, download or clone the repo and then type the followin
 
 Use the stable version:
 ```
-yarn add @whiskeysockets/baileys
+yarn add @brayanofc-li/baileysx
 ```
 
 Use the edge version (no guarantee of stability, but latest fixes + features)
 ```
-yarn add github:WhiskeySockets/Baileys
+yarn add github:BrayanOFC-Li/baileysx
 ```
 
 Then import your code using:
 ```ts 
-import makeWASocket from '@whiskeysockets/baileys'
+import makeWASocket from 'brayanofc-li/baileysx'
 ```
 
 # Links
@@ -189,7 +189,7 @@ WhatsApp provides a multi-device API that allows Baileys to be authenticated as 
 > You can customize browser name if you connect with **QR-CODE**, with `Browser` constant, we have some browsers config, **see [here](https://baileys.whiskeysockets.io/types/BrowsersMap.html)**
 
 ```ts
-import makeWASocket from '@whiskeysockets/baileys'
+import makeWASocket from '@brayanofc-li/baileysx'
 
 const sock = makeWASocket({
     // can provide additional config here
@@ -209,7 +209,7 @@ If the connection is successful, you will see a QR code printed on your terminal
 The phone number can't have `+` or `()` or `-`, only numbers, you must provide country code
 
 ```ts
-import makeWASocket from '@whiskeysockets/baileys'
+import makeWASocket from '@brayanofc-li/baileysx'
 
 const sock = makeWASocket({
     // can provide additional config here
@@ -282,7 +282,7 @@ You obviously don't want to keep scanning the QR code every time you want to con
 
 So, you can load the credentials to log back in:
 ```ts
-import makeWASocket, { useMultiFileAuthState } from '@whiskeysockets/baileys'
+import makeWASocket, { useMultiFileAuthState } from '@brayanofc-li/baileysx'
 
 const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys')
 
@@ -322,7 +322,7 @@ sock.ev.on('messages.upsert', ({ messages }) => {
 > This example includes basic auth storage too
 
 ```ts
-import makeWASocket, { DisconnectReason, useMultiFileAuthState } from '@whiskeysockets/baileys'
+import makeWASocket, { DisconnectReason, useMultiFileAuthState } from '@brayanofc-li/baileysx'
 import { Boom } from '@hapi/boom'
 
 async function connectToWhatsApp () {
@@ -404,7 +404,7 @@ sock.ev.on('messages.update', event => {
 It can be used as follows:
 
 ```ts
-import makeWASocket, { makeInMemoryStore } from '@whiskeysockets/baileys'
+import makeWASocket, { makeInMemoryStore } from '@brayanofc-li/baileysx'
 // the store maintains the data of the WA connection in memory
 // can be written out to a file & read from it
 const store = makeInMemoryStore({ })
@@ -590,7 +590,7 @@ await sock.sendMessage(
 await sock.sendMessage(
     jid,
     {
-        text: 'Hi, this was sent using https://github.com/whiskeysockets/baileys'
+        text: 'Hi, this was sent using https://github.com/BrayanOFC-Li/baileysx'
     }
 )
 ```
@@ -1279,7 +1279,7 @@ sock.ws.on('CB:edge_routing,id:abcd,routing_info', (node: BinaryNode) => { })
 ```
 
 # License
-Copyright (c) 2025 Rajeh Taher/WhiskeySockets
+Copyright (c) 2025 Rajeh Taher/BrayanOFC-Li
 
 Licensed under the MIT License:
 Permission is hereby granted, free of charge, to any person obtaining a copy
