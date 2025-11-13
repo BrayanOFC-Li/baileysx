@@ -1,14 +1,14 @@
 {
-  "name": "baileys",
+  "name": "baileysx",
   "version": "6.7.18",
-  "description": "A WebSockets library for interacting with WhatsApp Web",
+  "description": "version personal BrayanOFC-Li",
   "keywords": [
     "whatsapp",
     "automation"
   ],
-  "homepage": "https://github.com/WhiskeySockets/Baileys/",
+  "homepage": "https://github.com/BrayanOFC-Li/baileysx/",
   "repository": {
-    "url": "git@github.com:WhiskeySockets/Baileys.git"
+    "url": "git@github.com:BrayanOFC-Li/baileysx.git"
   },
   "license": "MIT",
   "author": "Rajeh Taher",
