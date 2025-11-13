@@ -32,7 +32,7 @@ jobs:
 
       - name: Publish in NPM (@brayanofc-li scope)
         run: |
-          npx json -I -f package.json -e "this.name='@brayanofc-li/baileys-md'"
+          npx json -I -f package.json -e "this.name='@brayanofc-li/baileysx'"
           npm publish --access public --//registry.npmjs.org/:_authToken=$NPM_TOKEN
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -45,6 +45,6 @@ jobs:
           tag: ${{ github.ref }}
           commitish: ${{ github.sha }}
           name: ${{ github.ref_name }}
-          body: "Publicación automática de @brayanofc-li/baileys-md"
+          body: "Publicación automática de @brayanofc-li/baileysx"
           draft: false
           prerelease: false
