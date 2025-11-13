@@ -1,9 +1,9 @@
-<h1 align='center'><img alt="Baileys logo" src="https://raw.githubusercontent.com/WhiskeySockets/Baileys/refs/heads/master/Media/logo.png" height="75"/></h1>
+<h1 align='center'><img alt="Baileys logo" src="https://raw.githubusercontent.com/brayanofc-li/baileysx/refs/heads/master/Media/logo.png" height="75"/></h1>
 
 <div align='center'>
 
 ![NPM Downloads](https://img.shields.io/npm/dw/%40whiskeysockets%2Fbaileys?label=npm&color=%23CB3837)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/whiskeysockets/baileys)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/brayanofc-li/baileysx)
 ![Discord](https://img.shields.io/discord/725839806084546610?label=discord&color=%235865F2)
 
 </div>
@@ -438,8 +438,8 @@ The store also provides some simple functions such as `loadMessages` that utiliz
 
 - `id` is the WhatsApp ID, called `jid` too, of the person or group you're sending the message to. 
     - It must be in the format ```[country code][phone number]@s.whatsapp.net```
-	    - Example for people: ```+19999999999@s.whatsapp.net```. 
-	    - For groups, it must be in the format ``` 123456789-123345@g.us ```. 
+            - Example for people: ```+19999999999@s.whatsapp.net```. 
+            - For groups, it must be in the format ``` 123456789-123345@g.us ```. 
     - For broadcast lists, it's `[timestamp of creation]@broadcast`.
     - For stories, the ID is `status@broadcast`.
 
@@ -629,7 +629,7 @@ await sock.sendMessage(
             url: './Media/ma_gif.mp4'
         },
         caption: 'hello word',
-	    ptv: false // if set to true, will send as a `video note`
+            ptv: false // if set to true, will send as a `video note`
     }
 )
 ```
@@ -720,7 +720,7 @@ await sock.sendMessage(jid, {
 If you want to save the media you received
 ```ts
 import { createWriteStream } from 'fs'
-import { downloadMediaMessage, getContentType } from '@whiskeysockets/baileys'
+import { downloadMediaMessage, getContentType } from '@brayanofc-li/baileysx'
 
 sock.ev.on('messages.upsert', async ({ [m] }) => {
     if (!m.message) return // if there is no text or media message
